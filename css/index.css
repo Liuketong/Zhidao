@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+#container{
+    max-width: 1263px;
+    margin: 90px auto;
+}
+.list{
+    width: 71%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    float: left;
+}
+.list .button{
+    text-align: right;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 0;
+}
+.list .ask{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #32a5e7;
+    text-align: center;
+    border-radius: 4px;
+}
+.list .ask:hover{
+    background-color: #2799db;
+}
+.list .question{
+    padding: 0 0 25px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.list .question_img{
+    float: left;
+    margin-right: 10px;
+}
+.list .question_face{
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+}
+.list .question_title{
+    font-size: 16px;
+    padding: 4px 0 12px 0;
+}
+.list .question_title a{
+    color: #555;
+}
+.list .question_title a:visited{
+    color: #999;
+}
+.list .question_info{
+    font-size: 12px;
+    color: #777;
+}
+.list .question_info em{
+    float: right;
+    font-style: normal;
+}
+.sidebar{
+    width: 28%;
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    float: right;
+}
+.sidebar h2{
+    font-size: 18px;
+    color: #00bfff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 0 20px 0;
+}
+.sidebar em{
+    float: right;
+    color: #666666;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+.sidebar .adver{
+    padding: 20px 0 0 0;
+}
+
+/*在小于768时*/
+@media (max-width: 768px){
+    .list{
+        width: 100%;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+
+/*在小于480时*/
+@media (max-width: 480px){
+    .list .question_info{
+        display: none;
+    }
+    .list .question_title{
+        font-size: 14px;
+    }
+}

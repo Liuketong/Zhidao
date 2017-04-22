@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+#container{
+    max-width: 1263px;
+    min-height: 750px;
+    margin: 90px auto 0 auto;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.form{
+    width: 35%;
+    margin: 100px auto;
+}
+.form .text{
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    padding: 2px 5px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.form .select{
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    padding: 2px 5px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.form .submit{
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    background-color: #00bfff;
+    border: 0;
+    color: #ffffff;
+    font-size: 15px;
+}
+/*在 992 和 1199 像素之间的屏幕里,这里的样式才生效*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .form {
+        width: 45%;
+        margin: 80px auto;
+    }
+}
+/*在 768 和 991 像素之间的屏幕里,这里的样式才生效*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .form {
+        width: 55%;
+        margin: 60px auto;
+    }
+}
+/*在 480 和 767 像素之间的屏幕里,这里的样式才生效*/
+@media (min-width: 480px) and (max-width: 767px) {
+    .form {
+        width: 78%;
+        margin: 40px auto;
+    }
+}
+/*在小于 480 像素的屏幕,这里的样式才生效*/
+@media (max-width: 479px) {
+    .form {
+        width: 95%;
+        margin: 20px auto;
+    }
+}

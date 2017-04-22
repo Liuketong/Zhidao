@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+#container{
+    max-width: 1263px;
+    min-height: 750px;
+    margin: 90px auto 0 auto;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.form{
+    width: 80%;
+    margin: 20px auto;
+}
+.form .text{
+    width: 100%;
+    height: 40px;
+}
+.form .text{
+    width: 480px;
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+.form .textarea{
+    width: 93%;
+    height: 280px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+.form .submit{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    background-color: #00bfff;
+    border: 0;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/*在小于768像素的屏幕里，样式才生效*/
+@media (max-width: 768px){
+    .form .text{
+        width: 100%;
+    }
+}

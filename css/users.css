@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+#container{
+    max-width: 1263px;
+    min-height: 750px;
+    margin: 90px auto 0 auto;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+.figure figure{
+    width: 25%;
+    float: left;
+    margin: 25px 0;
+}
+.figure img{
+    margin: 0 auto;
+}
+.figure figcaption{
+    padding: 10px 0;
+    text-align:center;
+    color: #666666;
+}
+
+/*在 768 和 991 像素之间的屏幕里,这里的样式才生效*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .figure figure {
+        width: 33.3%;
+        float: left;
+        margin: 20px 0;
+    }
+}
+
+/*在 480 和 767 像素之间的屏幕里,这里的样式才生效*/
+@media (max-width: 767px) {
+    .figure figure {
+        width: 45%;
+        float: left;
+        margin: 18px 2%;
+    }
+
+    .figure figcaption {
+        font-size: 13px;
+    }
+}
